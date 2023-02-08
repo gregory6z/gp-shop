@@ -4,6 +4,22 @@ export const globalStyles = globalCss({
   "*": {
     margin: 0,
     padding: 0,
+    boxSizing: "border-box",
+    scrollbarWidth: "thin",
+  },
+
+  "*::webkit-scrollbar": {
+    width: 6,
+  },
+  "*::-webkit-scrollbar": {
+    width: 6,
+  },
+  "*::-webkit-scrollbar-track": {
+    background: "$green100",
+  },
+  "*::-webkit-scrollbar-thumb": {
+    backgroundColor: "$green500",
+    borderRadius: 6,
   },
 
   body: {
@@ -15,5 +31,6 @@ export const globalStyles = globalCss({
   "body, input, textarea, button": {
     fontFamily: "Roboto",
     fontWeight: 400,
+    lineHeight: "160%",
   },
 })
